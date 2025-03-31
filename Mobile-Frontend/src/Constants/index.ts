@@ -1,0 +1,32 @@
+export const IS_DEV = false;
+const DEV_API_URL = 'http://192.168.0.113:8000/api';
+export const API_URL = DEV_API_URL;
+
+export const SIGNUP_API = API_URL + '/open/signup?'; // POST METHOD
+export const SIGHIN_API = API_URL + '/open/login?'; // POST METHOD
+export const FORGOT_PASSWORD_API = API_URL + '/open/forgot-password?'; // POST METHOD
+export const COMFIRM_CODE = API_URL + '/open/confirm-code?'; // POST METHOD
+export const EDIT_PROFILE = API_URL + '/user/edit?'; // POST METHOD
+export const RESET_PASSWORD = API_URL + '/user/reset-password?'; // POST METHOD
+export const GET_GOALS = API_URL + '/goal/get?'; // GET METHOD
+export const GET_META = API_URL + '/meta/get?'; // GET METHOD
+export const GET_GOAL_BY_ID = API_URL + '/goal/get-by-id?'; // GET METHOD
+export const GET_SUBJECTS = API_URL + '/subject/get?'; // GET METHOD
+export const GET_NOTIFICATIONS = API_URL + '/notification/get?'; // GET METHOD
+export const GET_ASSIGNMENT_TYPE = API_URL + '/assignment-type/get'; // GET METHOD
+export const GET_ASSIGNMENT = API_URL + '/assignment/get?'; // GET METHOD
+export const CREATE_ASSIGNMENT = API_URL + '/assignment/create'; // POST METHOD
+export const EDIT_ASSIGNMENT = API_URL + '/assignment/edit'; // POST METHOD
+export const COMPLETED_ASSIGNMENT = API_URL + '/assignment/completed'; // POST METHOD
+export const CREATE_GOAL = API_URL + '/goal/create'; // POST METHOD
+export const EDIT_GOAL = API_URL + '/goal/edit'; // POST METHOD
+export const CREATE_SUBJECTS = API_URL + '/subject/create-multiple'; // POST METHOD
+export const EDIT_SUBJECT = API_URL + '/subject/edit'; // POST METHOD
+export const CHECK_SUBJECTS = API_URL + '/subject/check-multiple'; // POST METHOD
+export const CHECK_SUBJECT = API_URL + '/subject/check'; // POST METHOD
+export const GET_PENDING_SUBJECT = API_URL + '/subject/pending?'; // GET METHOD
+export const GET_ASSIGNMENTS_SUBJECT = API_URL + '/assignment/subject?'; // GET METHOD
+export const GET_ASSIGNMENT_BY_ID = API_URL + '/assignment/assignment?'; // GET METHOD
+export const UPLOAD_IMAGE = API_URL + '/close/upload-image'; // POST METHOD
+export const READ_NOTIFICATION = API_URL + '/notification/mark-as-read'; // POST METHOD
+
