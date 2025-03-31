@@ -33,10 +33,17 @@ var smtpTransport = nodemailer.createTransport({
   },
 });
 
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-});
+const initializeFirebase = () => {
+  try {
+    admin.initializeApp({
+      credential: admin.credential.cert(serviceAccount),
+    })
+  } catch (e) {
+    console.log(e)
+  }
+}
 
+initializeFirebase()
 const CRONJOB_RECORDS = {};
 const handleMongooseError = (response) => {
   let returnResponse = {};
@@ -241,7 +248,7 @@ const handleGoalNotifications = (goalId, notifyBefore = new Date()) => {
       delete CRONJOB_RECORDS[obj.id];
     }
   });
-  return ;
+  return;
 };
 const handleGoalMails = (goalId, notifyBefore = new Date()) => {
   const dateInit = new Date(notifyBefore);
@@ -303,7 +310,7 @@ const handleGoalMails = (goalId, notifyBefore = new Date()) => {
       delete CRONJOB_RECORDS[obj.id];
     }
   });
-  return ;
+  return;
 };
 
 const handleAssignmentCronjob = (assignmentId, date) => {
