@@ -74,11 +74,11 @@ const GlobalListModal = () => {
           }}
           ListEmptyComponent={() => (
             <EmptyComponent
-              text="No Subjects Found"
+              text="No Categories Found"
               button={
                 <CustomButton
                   onPress={() => navigation.navigate(ADD_SUBJECT_PATH)}>
-                  Add Subjects
+                  Add Category
                 </CustomButton>
               }
             />

@@ -105,7 +105,7 @@ const AddAssignment = ({route}) => {
         throw new Error('Due Date is Required');
       }
       if (!reqObj.subject) {
-        throw new Error('Subject is Required');
+        throw new Error('Category is Required');
       }
       // if (!reqObj.type) {
       //   throw new Error('Type is Required');
@@ -163,7 +163,7 @@ const AddAssignment = ({route}) => {
         throw new Error('Due Date is Required');
       }
       if (!reqObj.subject) {
-        throw new Error('Subject is Required');
+        throw new Error('Category is Required');
       }
       // if (!reqObj.type) {
       //   throw new Error('Type is Required');
@@ -273,7 +273,7 @@ const AddAssignment = ({route}) => {
               {/* <ListInput
               value={subject}
               onChange={setSubject}
-              label="Subject"
+              label="Category"
               onSelect={handleSubjectSelect}
               onClose={() => setDatePickerVisibility(false)}
               data={subjects}

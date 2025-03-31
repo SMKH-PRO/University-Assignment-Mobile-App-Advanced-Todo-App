@@ -145,7 +145,7 @@ const AddSubject = ({route, navigation}) => {
         await alert({
           type: DropdownAlertType.Success,
           title: 'Success',
-          message: 'Subjects added successfully',
+          message: 'Category added successfully',
         });
       }
 
@@ -225,7 +225,7 @@ const AddSubject = ({route, navigation}) => {
       };
 
       if (!reqObj.title) {
-        throw new Error('Subject Name is required');
+        throw new Error('Category Name is required');
       }
       setLoading(true);
       if (reqObj?.image?.uri) {
@@ -253,7 +253,7 @@ const AddSubject = ({route, navigation}) => {
       await alert({
         type: DropdownAlertType.Success,
         title: 'Success',
-        message: 'Subjects edited successfully',
+        message: 'Category edited successfully',
       });
 
       setTimeout(() => {

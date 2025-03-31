@@ -200,7 +200,7 @@ router.post("/check-multiple", async (req, res, next) => {
     });
     if (alreadyExists.length) {
       throw new Error(
-        `Subjects by the name of ${alreadyExists
+        `Category by the name of ${alreadyExists
           .map((v) => v.title)
           .join(", ")} already exists`
       );
@@ -228,7 +228,7 @@ router.post("/check", async (req, res, next) => {
     });
     if (alreadyExists.length) {
       throw new Error(
-        `Subjects by the name of ${alreadyExists
+        `Category by the name of ${alreadyExists
           .map((v) => v.title)
           .join(", ")} already exists`
       );

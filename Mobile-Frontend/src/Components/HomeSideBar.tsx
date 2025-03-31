@@ -55,7 +55,7 @@ const SideSearch = ({
 
   const [subjectFilters] = useState([
     {
-      title: 'All Subject',
+      title: 'All Categories',
       state: 'all',
     },
     {
