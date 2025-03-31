@@ -52,27 +52,6 @@ TaskMaster Pro was designed and implemented from the ground up to address the un
 - Integrated JWT authentication for secure access
 - Created a real-time notification system
 
-## Screenshots
-
-### Login Screen
-![Login Screen](./screenshots/login_screen.png)
-*Secure authentication system with password recovery*
-
-### Home Dashboard
-![Home Screen](./screenshots/home_screen.png)
-*Main dashboard showing upcoming tasks and priorities*
-
-### Task Creation
-![Add Task Screen](./screenshots/add_screen.png)
-*Detailed task creation with multiple options*
-
-### Goals Tracking
-![Goals Screen](./screenshots/goals_screen.png)
-*Goal management interface with progress tracking*
-
-### User Profile
-![Profile Screen](./screenshots/profile_screen.png)
-*User profile and application settings*
 
 ## Development Process
 
